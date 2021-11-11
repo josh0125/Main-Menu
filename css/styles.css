@@ -69,7 +69,6 @@ img {
   display: flex;
 }
 
-
 .main-menu .menu-icon {
   position: fixed;
   z-index: 2;
@@ -140,15 +139,15 @@ img {
 }
 
 nav ul {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    align-items: center;
-    list-style-type: none;
-    padding: 0;
-    max-width: 80rem;
-    gap: .75rem;
-    margin-top: 6rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  max-width: 80rem;
+  gap: .75rem;
+  margin-top: 6rem;
 }
 
 nav a {
@@ -162,18 +161,7 @@ nav a {
 nav a:not([href]) {
   color: var(--gray);
 }
-/*
-nav li a {
-    display: block;
-    color: var(--blue);
-    text-decoration: none;
-    margin: 0 .5rem;
 
-    padding: 1rem 2rem;
-    font-size: 1.25rem;
-    white-space: nowrap;
-  }
-*/
 nav a::after {
   content: "";
   width: calc(100% + 30px);
@@ -189,95 +177,6 @@ nav a::after {
 
 nav a[href]:hover {
   color: var(--yellow);
-}
-
-/*
-nav a:hover::after {
-  transform: scale(1);
-  transform-origin: left;
-}
-*/
-
-@media (min-width: 500px) {
-  
-  .main-menu {
-    order: 0;
-    display: block;
-  }
-  
-  .main-menu nav {
-    position: relative;
-    margin: 2 rem 1.5rem 2rem;
-    background: transparent;
-    width: auto;
-    height: auto;
-
-    transform: none;
-  }
-
-  .main-menu svg {
-    display: none;
-  }
-
-  .main-menu .menu-icon {
-    display: none;
-  }
-
-  /*
-  nav {
-    display: flex;
-    flex-flow: row nowrap;
-    flex: 1 1 auto;
-    justify-content: center;
-    margin-top: 25px;
-  }
-  */
-  
-  nav ul {
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 80rem;
-  }
-  
-  nav li a {
-      display: block;
-      color: var(--blue);
-      text-decoration: none;
-      margin: 0 .5rem;
-  
-      padding: 1rem 2rem;
-      font-size: 1.25rem;
-      white-space: nowrap;
-    }
-  
-  nav a {
-    text-decoration: none;
-  }
-  
-  nav a::after {
-    content: "";
-    width: calc(100% + 30px);
-    height: 3px;
-    display: block;
-    background-color: var(--pink);
-    margin-top: 12px;
-    margin-left: -15px;
-    transform: scale(0);
-    transition: transform 400ms ease;
-    transform-origin: left;
-  }
-  
-  nav a:hover::after {
-    transform: scale(1);
-    transform-origin: left;
-  }
-
-
 }
 
 /* Button */
@@ -505,25 +404,95 @@ svg {
 
 /* Media Queries */
 
+@media (min-width: 500px) {
+  
+  .main-menu {
+    order: 0;
+    display: block;
+  }
+  
+  .main-menu nav {
+    position: relative;
+    margin: 2 rem 1.5rem 2rem;
+    background: transparent;
+    width: auto;
+    height: auto;
+
+    transform: none;
+  }
+
+  .main-menu svg {
+    display: none;
+  }
+
+  .main-menu .menu-icon {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80rem;
+  }
+  
+  nav li a {
+    display: block;
+    color: var(--blue);
+    text-decoration: none;
+    margin: 0 .5rem;
+  
+    padding: 1rem 2rem;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a::after {
+    content: "";
+    width: calc(100% + 30px);
+    height: 3px;
+    display: block;
+    background-color: var(--pink);
+    margin-top: 12px;
+    margin-left: -15px;
+    transform: scale(0);
+    transition: transform 400ms ease;
+    transform-origin: left;
+  }
+  
+  nav a:hover::after {
+    transform: scale(1);
+    transform-origin: left;
+  }
+}
+
 @media (min-width: 600px) {
-    .panel {
-      flex-direction: row;
-      gap: 2rem;
-    }
+  .panel {
+    flex-direction: row;
+    gap: 2rem;
+  }
 
-    .panel .left {
-      order: -2;
-    }
+  .panel .left {
+    order: -2;
+  }
 
-    .cards {
-      flex-flow: row wrap;
-      margin: 3rem;
-      font-size: 1.5rem;
-    }
+  .cards {
+    flex-flow: row wrap;
+    margin: 3rem;
+    font-size: 1.5rem;
+  }
 
-    .cards .card {
-      flex: 1 1 45%;
-    }
+  .cards .card {
+    flex: 1 1 45%;
+  }
 }
 
 @media (min-width: 1075px) {
